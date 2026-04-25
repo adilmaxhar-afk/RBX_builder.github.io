@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$1 Roblox Game Maker - Custom Games Fast!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fab fa-roblox"></i>
+                    <span>Roblox Game Maker</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#examples">Examples</a>
+                    <a href="#order">Order Now</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1><span class="dollar">$1</span> Custom Roblox Games!</h1>
+            <p>Describe your dream game. I'll build it in 24-48 hours. <strong>100% Satisfaction Guaranteed!</strong></p>
+            <div class="cta-buttons">
+                <button class="btn-primary" onclick="scrollToOrder()">Order Now - $1</button>
+                <button class="btn-secondary" onclick="scrollToExamples()">See Examples</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-gamepad"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>What I Can Build For $1</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Obbies</h3>
+                    <p>10-50 stage obstacle courses with checkpoints</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Tycoons</h3>
+                    <p>Complete business simulators with upgrades</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-fist-raised"></i>
+                    <h3>Fighting Games</h3>
+                    <p>PvP arenas with combos and leaderboards</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>Pet Simulators</h3>
+                    <p>Collect, trade, and fuse pets</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Car Games</h3>
+                    <p>Racing, drifting, or car dealerships</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-magic"></i>
+                    <h3>Any Custom Idea!</h3>
+                    <p>RP, horror, survival, simulators - you name it!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="examples" class="examples">
+        <div class="container">
+            <h2>Recent Games I've Built</h2>
+            <div class="examples-grid">
+                <div class="example-card">
+                    <img src="https://via.placeholder.com/300x200/00bfff/ffffff?text=Obby+King" alt="Obby">
+                    <h3>Obby King</h3>
+                    <p>50-stage obby with VIP rooms</p>
+                </div>
+                <div class="example-card">
+                    <img src="https://via.placeholder.com/300x200/ff6b6b/ffffff?text=Pet+Sim" alt="Pet Sim">
+                    <h3>Pet Simulator X2</h3>
+                    <p>Pet collecting with worlds</p>
+                </div>
+                <div class="example-card">
+                    <img src="https://via.placeholder.com/300x200/4ecdc4/ffffff?text=Tycoon" alt="Tycoon">
+                    <h3>Pizza Tycoon</h3>
+                    <p>Restaurant empire builder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="order-form">
+        <div class="container">
+            <h2>Submit Your Game Idea - Only $1!</h2>
+            <form id="gameForm" class="order-form-content">
+                <div class="form-group">
+                    <label>Discord Username (Required for delivery)</label>
+                    <input type="text" id="discord" placeholder="YourDiscord#1234" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Game Title</label>
+                    <input type="text" id="title" placeholder="e.g. 'Ultimate Obby Adventure'">
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Game Type <span>(Select all that apply)</span></label>
+                    <div class="checkbox-grid">
+                        <label><input type="checkbox" value="obby"> Obby</label>
+                        <label><input type="checkbox" value="tycoon"> Tycoon</label>
+                        <label><input type="checkbox" value="fighting"> Fighting</label>
+                        <label><input type="checkbox" value="pets"> Pet Sim</label>
+                        <label><input type="checkbox" value="racing"> Racing</label>
+                        <label><input type="checkbox" value="rp"> Roleplay</label>
+                        <label><input type="checkbox" value="horror"> Horror</label>
+                        <label><input type="checkbox" value="other"> Other</label>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Detailed Description <span style="color: #ff6b6b;">(Be specific!)</span></label>
+                    <textarea id="description" rows="8" placeholder="Tell me everything! 
+Examples:
+- 30 stage obby with ice, lava, and wind stages
+- Pet simulator with 5 worlds and egg hatching
+- Car dealership where you customize and sell cars
+- Fighting arena with 4 classes and leaderboards"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <select id="payment" required>
+                        <option value="">Select payment</option>
+                        <option value="paypal">PayPal ($1)</option>
+                        <option value="cashapp">CashApp ($1)</option>
+                        <option value="venmo">Venmo ($1)</option>
+                        <option value="robux">10 Robux via group</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Payment Details</label>
+                    <input type="text" id="paymentDetails" placeholder="PayPal email / CashApp tag / etc.">
+                </div>
+
+                <button type="submit" class="btn-primary full-width">
+                    <i class="fas fa-dollar-sign"></i> Submit Order - $1
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Ready to Start?</h2>
+            <p>DM me on Discord: <strong>yourusername#1234</strong></p>
+            <p>Or email: <strong>robloxgames@example.com</strong></p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                <a href="#"><i class="fab fa-roblox"></i> Roblox</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Roblox Game Maker. Custom games for just $1! 🚀</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
